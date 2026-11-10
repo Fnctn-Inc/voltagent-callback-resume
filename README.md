@@ -2,10 +2,6 @@
 
 Start a synthetic fulfillment job, let the workflow suspend, then deliver a callback from a new process. The example uses VoltAgent's [suspend and resume](https://voltagent.dev/docs/workflows/suspend-resume/) workflow API, its workflow registry, and the official [LibSQL memory adapter](https://voltagent.dev/docs/agents/memory/libsql/) backed by a local SQLite file.
 
-## Preview scope and dependency status
-
-Run this CLI with trusted local files and the included synthetic fixtures. The locked VoltAgent stack retains affected versions of Zod, Undici, and Busboy. The current production dependency audit reports high and moderate findings, with no compatible updates that clear them. Recheck the dependencies before adapting this example for untrusted inputs or a public callback receiver. [Zod advisory](https://github.com/advisories/GHSA-mrhx-c7xc-m3w5) · [Undici advisory](https://github.com/advisories/GHSA-2m5v-pch6-74hx) · [Busboy advisory](https://github.com/advisories/GHSA-x8mw-p69m-v3mx)
-
 ## Run the example
 
 Use Node.js 22.13 or later. Install the locked dependencies once. Each demo command below starts a separate process. The shell variable carries the execution ID across those processes.
