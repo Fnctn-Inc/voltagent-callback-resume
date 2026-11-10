@@ -1,0 +1,26 @@
+{
+  "name": "voltagent-callback-resume",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Resume a persisted VoltAgent fulfillment workflow from a validated synthetic callback.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "demo": "node --no-warnings=ExperimentalWarning --experimental-strip-types src/cli.ts",
+    "test": "node --no-warnings=ExperimentalWarning --experimental-strip-types --test test/callback-resume.test.ts",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@voltagent/core": "2.11.1",
+    "@voltagent/libsql": "2.1.2",
+    "@voltagent/logger": "2.0.2",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "typescript": "6.0.3"
+  }
+}
